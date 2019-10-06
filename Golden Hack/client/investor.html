@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <head>
   <meta charset="UTF-8">
   <title>Registration</title>
@@ -44,7 +42,6 @@
     color: white;
   }
   </style>
-  </head>
   <body>
 
   <div class="topnav">
@@ -59,10 +56,18 @@
       <div class="col-md-6 col-md-offset-3">
           <form id="msform">
               <fieldset>
-                  <h2 class="fs-title" style=font-family:verdana;>Company Information</h2>
-                  <h3 class="fs-subtitle" style="font-family:verdana; font-size:125%;">Tell us about your company!</h3>
-                  <input type="text" name="compName" style=font-family:verdana; placeholder="Company Name"/>
-                  <h7 style="font-family:verdana" margin:0px auto -5px; width: 135px> Industry Sector</h7>
+                  <h2 class="fs-title" style=font-family:verdana;>Contact Information</h2>
+                  <h3 class="fs-subtitle" style="font-family:verdana; font-size:125%;">Tell us about yourself!</h3>
+                  <input type="text" name="compName" style=font-family:verdana; placeholder="Name"/>
+                 <input type="text" name="compName" style=font-family:verdana; placeholder="Email"/>
+                  <input type="text" name="market" style=font-family:verdana; placeholder="Affiliated Organization (if applicable)"/>
+              </fieldset>
+              <br>
+              <br>
+              <fieldset>
+                  <h2 class="fs-title" style=font-family:verdana;>Investment Information</h2>
+                  <h3 class="fs-subtitle"style="font-family:verdana; font-size:125%;">Help startup companies connect!</h3>
+                  <h7 style="font-family:verdana" margin:0px auto -5px; width: 135px> Interested Sectors</h7>
                   <br>
                   <select id = "Industry Sector" style="margin:0px auto 15px; width: 1000px; font-family:verdana;">
                    <option value = "1" style=font-family:verdana;>Financial Technology</option>
@@ -71,38 +76,26 @@
                    <option value = "4" style=font-family:verdana;>Education</option>
                    <option value = "5" style=font-family:verdana;>Other</option>
                  </select>
-                  <input type="text" name="market" style=font-family:verdana; placeholder="Target Market"/>
-                  <input type="text" name="revenue" style=font-family:verdana; placeholder="Revenue Stage ($)"/>
-              </fieldset>
-              <br>
-              <br>
-              <fieldset>
-                  <h2 class="fs-title" style=font-family:verdana;>Contact Information</h2>
-                  <h3 class="fs-subtitle"style="font-family:verdana; font-size:125%;">Help investors connect!</h3>
-                  <input type="text" name="name" style=font-family:verdana; placeholder="Name"/>
-                  <input type="text" name="position"style=font-family:verdana; placeholder="Position (e.g. Founder)"/>
-                  <input type="text" name="email" style=font-family:verdana; placeholder="Email"/>
-                  <input type="text" name="linkedin" style=font-family:verdana; placeholder="LinkedIn URL"/>
+                 <br>
+                  <h7 style="font-family:verdana" margin:0px auto -5px; width: 135px>Partner Type</h7>
+                  <br>
+                  <select id = "Industry Sector" style="margin:0px auto 15px; width: 1000px; font-family:verdana;">
+                   <option value = "1" style=font-family:verdana;>Investing in a priced equity round</option>
+                   <option value = "2" style=font-family:verdana;>Investing in convertible securities</option>
+                 </select>
 
               </fieldset>
               <br>
               <br>
               <fieldset>
-                  <h2 class="fs-title" style=font-family:verdana;>Company Summary</h2>
-                  <h3 class="fs-subtitle" style="font-family:verdana; font-size:125%;">Give us the "big picture"</h3>
-                  <textarea class="wideInput" type="text" maxlength="280" name="description" style=font-family:verdana; placeholder="Give a quick description of your startup mission (280 characters max)."></textarea>
-              </fieldset>
-              <br>
-              <br>
-              <fieldset>
-                  <h2 class="fs-title" style=font-family:verdana;>Actively looking for Funding?</h2>
+                  <h2 class="fs-title" style=font-family:verdana;>Actively looking to invest?</h2>
                   <form action="" method="post">
                     <input type="radio" name="joke" value="bed" style="margin:0px auto 0px; width: 20px; font-family:verdana;"/> Yes
                     <input type="radio" name="joke" value="clock" style="margin:0px auto 0px; width: 20px; font-family:verdana;"/> No
                   </form>
                   <br>
                   <br>
-                  <input type="text" name="revenue" style=font-family:verdana; placeholder="If yes, how much funding are you seeking? ($)"/>
+                  <input type="text" name="revenue" style=font-family:verdana; placeholder="If yes, how much is your investment range ($)"/>
               </fieldset>
           </form>
 
@@ -117,10 +110,10 @@
       <button type="submit" style="height:50px;width:300px;background-color:beige;border-color:lightblue;">Submit</button>
     </form>
 
+  </div>
 
-  <style type="text/css">
   <!-- /.MultiStep Form -->
-
+  <style type="text/css">
   /*custom font*/
   @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
@@ -289,6 +282,6 @@
       background: #ee0979;
       color: white;
   }
-
+  </style>
 
 </body>
